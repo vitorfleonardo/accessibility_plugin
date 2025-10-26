@@ -1,4 +1,4 @@
-# Template: Plugin de Auditoria de Acessibilidade Web
+# Plugin de Auditoria de Acessibilidade Web
 
 Este repositório contém um protótipo funcional de uma extensão para o Google Chrome, desenvolvida com o objetivo de auditar páginas web com base em critérios selecionados das Diretrizes de Acessibilidade para Conteúdo Web (WCAG).
 
@@ -11,8 +11,8 @@ Uma extensão de navegador é um pequeno programa de software que personaliza e 
 A arquitetura de uma extensão moderna (especificamente o Manifest V3 do Chrome) é baseada em alguns componentes principais:
 
 1. `manifest.json` : informa ao navegador o nome da extensão, a versão, as permissões necessárias e quais arquivos são responsáveis por sua funcionalidade.
-2. Interface do Usuário: é a interface com a qual o usuário interage, geralmente uma pequena janela (popup.html) que aparece ao clicar no ícone da extensão na barra de ferramentas.
-3. Scripts: O JavaScript (popup.js) que dá vida à extensão, ele não pode acessar diretamente o DOM da página, por motivos de segurança. Em vez disso, ele utiliza a API chrome.scripting para injetar um script ou função no contexto da página ativa.
+2. Interface do Usuário: é a interface com a qual o usuário interage, geralmente uma pequena janela (`popup.html`) que aparece ao clicar no ícone da extensão na barra de ferramentas.
+3. Scripts: O JavaScript (`popup.js`) que dá vida à extensão, ele não pode acessar diretamente o DOM da página, por motivos de segurança. Em vez disso, ele utiliza a API chrome.scripting para injetar um script ou função no contexto da página ativa.
 
 # Funcionamento Específico deste Protótipo/Template
 
